@@ -10,10 +10,10 @@ site-twitter: #if your site has a twitter account, enter it here
 
 # Author Settings
 author: Alireza Bagheri # add your name
-author-img: david-freeman.jpg # add your photo
+author-img: Alireza.png # add your photo
 about-author: Recent PhD graduate (May 2019) in Electrical Engineering at New Jersey Institute of Technology (NJIT). Data Science enthusiast! # add description
-social-twitter: bagheri365# add your Twitter handle
-social-facebook: # add your Facebook handle
+social-twitter: bagheri365 # add your Twitter handle
+#social-facebook: # add your Facebook handle
 social-github: alireza365 # add your Github handle
 social-linkedin: bagheri365 # add your Linkedin handle
 social-email: # add your Email address
