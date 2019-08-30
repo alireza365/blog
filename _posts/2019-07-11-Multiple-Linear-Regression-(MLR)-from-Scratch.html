@@ -13142,7 +13142,7 @@ div#notebook {
 {y_i} = {\beta _0} + {\beta _1}{x_{i,1}} + ... + {\beta _k}{x_{i,k}} + {e_i},
 \end{equation*}<p>where $i = 1, ..., n$, and ${e_i}$ is a noise variable. In matrix form, we have</p>
 \begin{equation*}
-{\bf{y}} = {\bf{X\beta }} + {\bf{e}},
+{\bf{y}} = {\bf{X}}{\boldsymbol{\beta}} + {\bf{e}},
 \end{equation*}<p>where ${\bf{y}}$ is the vector of observed variables</p>
 \begin{equation*}
 {\bf{y}} = \left[ \begin{array}{c} 
@@ -13163,7 +13163,7 @@ div#notebook {
 \end{equation*}<p>    
 ${\boldsymbol{\beta }}$ is the parameter vector</p>
 \begin{equation*}
-{\bf{\beta }} = {\left[ {\begin{array}{c}
+{\boldsymbol{\beta }} = {\left[ {\begin{array}{c}
 {\beta _0}\\
 {\beta _1}\\
  \vdots \\
@@ -13179,12 +13179,13 @@ ${\boldsymbol{\beta }}$ is the parameter vector</p>
 \end{array}} \right]_{n \times 1}},
 \end{equation*}<p>and it considered to be generated as 
  ${\bf{e}} \sim {\cal N}\left( 0,{\sigma ^2} {\bf{I}}_{n \times n} \right)$.</p>
-<p>Like SLR, we use Mean Squared Error (MSE) metric to estimate parameters ${\bf{\beta }}$. Accordingly, we have the following optimization problem</p>
+<p>Like SLR, we use Mean Squared Error (MSE) metric to estimate parameters ${\boldsymbol{\beta }}$. 
+Accordingly, we have the following optimization problem</p>
 \begin{equation*}
-\underset{{\bf{\beta}}}{\text{minimize}} \quad { J\left( {\bf{\beta }} \right) }
+\underset{\boldsymbol{\beta}}{\text{minimize}} \quad { J\left( \boldsymbol{\beta } \right) }
 \end{equation*}<p>where the cost function $J$ is defined as</p>
 \begin{equation*}
-J = \frac{1}{n}{\left( {{\bf{y}} - {\bf{\hat y}}} \right)^T}\left( {{\bf{y}} - {\bf{\hat y}}} \right) = \frac{1}{n}{{\bf{e}}^T}{\bf{e}},
+J = \frac{1}{n}{\left( {\bf{y}} - {\bf{\hat y}} \right)^T}\left( {\bf{y}} - {\bf{\hat y}} \right) = \frac{1}{n}{{\bf{e}}^T}{\bf{e}},
 \end{equation*}<p>where ${\left( \cdot \right)^{T}}$ denotes transpose operation, ${\bf{y}}$ and ${\bf{\hat y}}$ are actual and predicted values, respectively. In continute, we study analytical and optimization solutions for the above problem.</p>
 
 </div>
