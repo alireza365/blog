@@ -13185,7 +13185,7 @@ Accordingly, we have the following optimization problem</p>
 \underset{\boldsymbol{\beta}}{\text{minimize}} \quad { J\left( \boldsymbol{\beta } \right) }
 \end{equation*}<p>where the cost function $J$ is defined as</p>
 \begin{equation*}
-J = \frac{1}{n}{\left( {\bf{y}} - {\bf{\hat y}} \right)^T}\left( {\bf{y}} - {\bf{\hat y}} \right) = \frac{1}{n}{{\bf{e}}^T}{\bf{e}},
+J = \frac{1}{n}\left( {\bf{y}} - {\bf{\hat y}} \right)^T \left( {\bf{y}} - {\bf{\hat y}} \right),
 \end{equation*}<p>where ${\left( \cdot \right)^{T}}$ denotes transpose operation, ${\bf{y}}$ and ${\bf{\hat y}}$ are actual and predicted values, respectively. In continute, we study analytical and optimization solutions for the above problem.</p>
 
 </div>
@@ -13285,15 +13285,19 @@ y = 30 - 10x_1 + 70x_2 + noise,
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="MLR-with-Analytical-Solution-">MLR with Analytical Solution <a name="Analytical_solution" /><a class="anchor-link" href="#MLR-with-Analytical-Solution-">&#182;</a></h1><p>In order to find the best estimate of ${\bf{\beta }}$ in the sense that the sum of squared residuals is minimized, we find the gradient of the MSE with respect to ${\bf{\beta }}$ as</p>
+<h1 id="MLR-with-Analytical-Solution-">MLR with Analytical Solution <a name="Analytical_solution" /><a class="anchor-link" href="#MLR-with-Analytical-Solution-">&#182;</a></h1>
+<p>In order to find the best estimate of ${\boldsymbol{\beta }}$ in the sense that the sum of squared residuals is minimized, 
+we find the gradient of the MSE with respect to ${\boldsymbol{\beta }}$ as</p>
 \begin{equation*}
-{\nabla _{\bf{\beta }}}J\left( {\bf{\beta }} \right) = \frac{1}{n}\left( {{\nabla _{\bf{\beta }}}{\bf{y}}{{\bf{y}}^T} - 2{\nabla _{\bf{\beta }}}{{\bf{\beta }}^T}{{\bf{X}}^T}{\bf{y}} + {\nabla _{\bf{\beta }}}{{\bf{\beta }}^T}{{\bf{X}}^T}{\bf{X\beta }}} \right) = \frac{2}{n}\left( {{{\bf{X}}^T}{\bf{X\beta }} - {{\bf{X}}^T}{\bf{y}}} \right).
-\end{equation*}<p>We now set this gradient to zero in order to obtain the optimum ${{\bf{\hat \beta }}}$:</p>
+\nabla _{\boldsymbol{\beta}} J\left( \boldsymbol{\beta } \right) = 
+    \frac{1}{n}\left( {{\nabla _{\boldsymbol{\beta }}}{\bf{y}}{{\bf{y}}^T} - 2{\nabla _{\bf{\beta }}}{{\boldsymbol{\beta }}^T}{{\bf{X}}^T}{\bf{y}} + {\nabla _{\boldsymbol{\beta }}}{{\boldsymbol{\beta }}^T}{{\bf{X}}^T}{\bf{X\beta }}} \right) 
+    = \frac{2}{n}\left( {{{\bf{X}}^T}{\bf{X\beta }} - {{\bf{X}}^T}{\bf{y}}} \right).
+\end{equation*}<p>We now set this gradient to zero in order to obtain the optimum $\boldsymbol{\hat \beta}$:</p>
 \begin{equation*}
-{\nabla _{\bf{\beta }}}J = {\bf{0}} \to {\bf{\hat \beta }} = {\left( {{{\bf{X}}^T}{\bf{X}}} \right)^{ - 1}}{{\bf{X}}^T}{\bf{y}},
+{\nabla _{\boldsymbol{\beta }}}J = {\bf{0}} \to {\bf{\hat \beta }} = {\left( {{{\bf{X}}^T}{\bf{X}}} \right)^{ - 1}}{{\bf{X}}^T}{\bf{y}},
 \end{equation*}<p>where ${\left( \cdot \right)^{ - 1}}$ denotes inverse matrix operation. Accordingly, the vector of fitted values is</p>
 \begin{equation*}
-{\bf{\hat y}} = {\bf{X\hat \beta }} = {\bf{Hy}},
+{\bf{\hat y}} = {\bf{X}\boldsymbol{\hat \beta }} = {\bf{Hy}},
 \end{equation*}<p>where the hat (influence) matrix, ${\bf{H}}$, is defined as</p>
 \begin{equation*}
 {\bf{H}} = {\bf{X}}{\left( {{{\bf{X}}^T}{\bf{X}}} \right)^{ - 1}}{{\bf{X}}^T}.
