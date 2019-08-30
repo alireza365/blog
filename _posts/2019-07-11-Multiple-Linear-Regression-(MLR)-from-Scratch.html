@@ -2,7 +2,7 @@
 <html>
 <head><meta charset="utf-8" />
 
-<title>Multiple_Linear_Regression_2</title>
+<title>Multiple Linear Regression (MLR) from Scratch</title>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
@@ -13146,12 +13146,13 @@ div#notebook {
 \end{equation*}<p>where ${\bf{y}}$ is the vector of observed variables</p>
 \begin{equation*}
 {\bf{y}} = \left[ \begin{array}{c} 
-{{y_1}}\\
-{{y_2}}\\
+{y_1}\\
+{y_2}\\
  \vdots \\
-{{y_n}} 
+{y_n} 
 \end{array} \right]_{n \times 1},
-\end{equation*}<p>${\bf{X}}$ is a ${n \times \left( {k + 1} \right)}$ matrix of random variables, sometimes called the design matrix, defined as</p>
+\end{equation*}<p>${\bf{X}}$ is a ${n \times \left( {k + 1} \right)}$ 
+    matrix of random variables, sometimes called the design matrix, defined as</p>
 \begin{equation*}
 {\bf{X}} = {\left[ {\begin{array}{l}
 1&amp;{{x_{1,1}}}&amp; \cdots &amp;{{x_{1,k}}}\\
@@ -13162,10 +13163,10 @@ div#notebook {
 \end{equation*}<p>${\bf{\beta }}$ is the parameter vector</p>
 \begin{equation*}
 {\bf{\beta }} = {\left[ {\begin{array}{c}
-{{\beta _0}}\\
-{{\beta _1}}\\
+{\beta _0}\\
+{\beta _1}\\
  \vdots \\
-{{\beta _k}}
+{\beta _k}
 \end{array}} \right]_{\left( {k + 1} \right) \times 1}},
 \end{equation*}<p>and ${\bf{e}}$ is a vector of errors</p>
 \begin{equation*}
@@ -13175,7 +13176,8 @@ div#notebook {
  \vdots \\
 {e_n}
 \end{array}} \right]_{n \times 1}},
-\end{equation*}<p>and it considered to be generated as ${\bf{e}} \sim {\cal N}\left( {0,{\sigma ^2}{{\bf{I}}_{n \times n}}} \right)$.</p>
+\end{equation*}<p>and it considered to be generated as 
+ ${\bf{e}} \sim {\cal N}\left( 0,{\sigma ^2}{{\bf{I}}_{n \times n}} \right)$.</p>
 <p>Like SLR, we use Mean Squared Error (MSE) metric to estimate parameters ${\bf{\beta }}$. Accordingly, we have the following optimization problem</p>
 \begin{equation*}
 \underset{{\bf{\beta}}}{\text{minimize}} \quad { J\left( {\bf{\beta }} \right) }
