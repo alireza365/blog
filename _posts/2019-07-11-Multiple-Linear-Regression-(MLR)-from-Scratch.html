@@ -13289,19 +13289,17 @@ y = 30 - 10x_1 + 70x_2 + noise,
 <p>In order to find the best estimate of ${\boldsymbol{\beta }}$ in the sense that the sum of squared residuals is minimized, 
 we find the gradient of the MSE with respect to ${\boldsymbol{\beta }}$ as</p>
 \begin{equation*}
-\nabla _{\boldsymbol{\beta}} J\left( \boldsymbol{\beta } \right) = 
-    \frac{1}{n}\left( {{\nabla _{\boldsymbol{\beta }}}{\bf{y}}{{\bf{y}}^T} - 2{\nabla _{\bf{\beta }}}{{\boldsymbol{\beta }}^T}{{\bf{X}}^T}{\bf{y}} + {\nabla _{\boldsymbol{\beta }}}{{\boldsymbol{\beta }}^T}{{\bf{X}}^T}{\bf{X\beta }}} \right) 
-    = \frac{2}{n}\left( {{{\bf{X}}^T}{\bf{X\beta }} - {{\bf{X}}^T}{\bf{y}}} \right).
+\nabla _{\boldsymbol{\beta}} J\left( \boldsymbol{\beta } \right) = .
 \end{equation*}<p>
 We now set this gradient to zero in order to obtain the optimum $\boldsymbol{\hat \beta}$:</p>
 \begin{equation*}
-\nabla _{\boldsymbol{\beta}} J = {\bf{0}} \to {\boldsymbol{\hat \beta }} = {\left( {{{\bf{X}}^T}{\bf{X}}} \right)^{ - 1}}{{\bf{X}}^T}{\bf{y}},
+\nabla _{\boldsymbol{\beta}} J = {\bf{0}} \to {\boldsymbol{\hat \beta }} = ,
 \end{equation*}<p>where ${\left( \cdot \right)^{ - 1}}$ denotes inverse matrix operation. Accordingly, the vector of fitted values is</p>
 \begin{equation*}
 {\bf{\hat y}} = {\bf{X}\boldsymbol{\hat \beta }} = {\bf{Hy}},
 \end{equation*}<p>where the hat (influence) matrix, ${\bf{H}}$, is defined as</p>
 \begin{equation*}
-{\bf{H}} = {\bf{X}}{\left( {{\bf{X}}^T}{\bf{X}} \right)^{ - 1}}{{\bf{X}}^T}.
+{\bf{H}} = {\bf{X}}\left( {\bf{X}}^T{\bf{X}} \right)^{ - 1}{{\bf{X}}^T}.
 \end{equation*}<p>Now, it is time to fit the model through the analyticl solution as the following.</p>
 
 </div>
