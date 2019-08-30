@@ -13292,15 +13292,16 @@ we find the gradient of the MSE with respect to ${\boldsymbol{\beta }}$ as</p>
 \nabla _{\boldsymbol{\beta}} J\left( \boldsymbol{\beta } \right) = 
     \frac{1}{n}\left( {{\nabla _{\boldsymbol{\beta }}}{\bf{y}}{{\bf{y}}^T} - 2{\nabla _{\bf{\beta }}}{{\boldsymbol{\beta }}^T}{{\bf{X}}^T}{\bf{y}} + {\nabla _{\boldsymbol{\beta }}}{{\boldsymbol{\beta }}^T}{{\bf{X}}^T}{\bf{X\beta }}} \right) 
     = \frac{2}{n}\left( {{{\bf{X}}^T}{\bf{X\beta }} - {{\bf{X}}^T}{\bf{y}}} \right).
-\end{equation*}<p>We now set this gradient to zero in order to obtain the optimum $\boldsymbol{\hat \beta}$:</p>
+\end{equation*}<p>
+We now set this gradient to zero in order to obtain the optimum $\boldsymbol{\hat \beta}$:</p>
 \begin{equation*}
-{\nabla _{\boldsymbol{\beta }}}J = {\bf{0}} \to {\bf{\hat \beta }} = {\left( {{{\bf{X}}^T}{\bf{X}}} \right)^{ - 1}}{{\bf{X}}^T}{\bf{y}},
+\nabla _{\boldsymbol{\beta}} J = {\bf{0}} \to {\boldsymbol{\hat \beta }} = {\left( {{{\bf{X}}^T}{\bf{X}}} \right)^{ - 1}}{{\bf{X}}^T}{\bf{y}},
 \end{equation*}<p>where ${\left( \cdot \right)^{ - 1}}$ denotes inverse matrix operation. Accordingly, the vector of fitted values is</p>
 \begin{equation*}
 {\bf{\hat y}} = {\bf{X}\boldsymbol{\hat \beta }} = {\bf{Hy}},
 \end{equation*}<p>where the hat (influence) matrix, ${\bf{H}}$, is defined as</p>
 \begin{equation*}
-{\bf{H}} = {\bf{X}}{\left( {{{\bf{X}}^T}{\bf{X}}} \right)^{ - 1}}{{\bf{X}}^T}.
+{\bf{H}} = {\bf{X}}{\left( {{\bf{X}}^T}{\bf{X}} \right)^{ - 1}}{{\bf{X}}^T}.
 \end{equation*}<p>Now, it is time to fit the model through the analyticl solution as the following.</p>
 
 </div>
@@ -13406,10 +13407,10 @@ we find the gradient of the MSE with respect to ${\boldsymbol{\beta }}$ as</p>
 <div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="MLR-with-Gradient-Descent-">MLR with Gradient Descent <a name="Gradient_descent" /><a class="anchor-link" href="#MLR-with-Gradient-Descent-">&#182;</a></h1><p>In gradient descent approach, we minimize the cost function $J$ by iteratively moving in the direction of steepest descent. Accordingly, the parameter ${\bf{\beta }}$ can be updated every iteration in the form of</p>
 \begin{equation*}
-{\bf{\beta }} \leftarrow {\bf{\beta }} + \eta {\nabla _{\bf{\beta }}}J,
+{\boldsymbol{\beta }} \leftarrow {\boldsymbol{\beta }} + \eta {\nabla _{\boldsymbol{\beta }}}J,
 \end{equation*}<p>where</p>
 \begin{equation*}
-{\nabla _{\bf{\beta }}}J = \frac{2}{n}\left( {{{\bf{X}}^T}{\bf{X\beta }} - {{\bf{X}}^T}{\bf{y}}} \right),
+\nabla _{\boldsymbol{\beta}} J = \frac{2}{n}\left( {{\bf{X}}^T}{\bf{X}}{\boldsymbol{\beta}} - {{\bf{X}}^T}{\bf{y}} \right),
 \end{equation*}<p>where $\eta$ is a constant step size (learning rate).</p>
 
 </div>
@@ -13534,7 +13535,9 @@ r2 score:
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="MLR-with-Scikit-Learn-">MLR with Scikit-Learn <a name="Scikit_learn" /><a class="anchor-link" href="#MLR-with-Scikit-Learn-">&#182;</a></h1><p>In this section, we do regression through Scikit-Learn package as the following.</p>
+<h1 id="MLR-with-Scikit-Learn-">MLR with Scikit-Learn <a name="Scikit_learn" /><a class="anchor-link" href="#MLR-with-Scikit-Learn-">&#182;</a></h1>
+    <p>
+    In this section, we do regression through Scikit-Learn package as the following.</p>
 
 </div>
 </div>
