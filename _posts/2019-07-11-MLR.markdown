@@ -1,0 +1,12 @@
+---
+layout: post
+title: Multiple Linear Regressin (MLR) from Scratch
+date: 2017-07-11 
+description: In this post, I share my python implementations of Multiple Linear Regression (MLR) from scratch.
+# Add post description (optional)
+img: workflow.jpg # Add image post (optional)
+fig-caption: # Add figcaption (optional)
+tags: [Machine Learning, Regression, MLR, Python] # add tag
+---
+
+Asymmetrical portland enamel pin af hei
