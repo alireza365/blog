@@ -9,9 +9,9 @@ url: "https://alireza365.github.io/blog/" # the base hostname & protocol for you
 site-twitter: #if your site has a twitter account, enter it here
 
 # Author Settings
-author: Alireza Bagheri # add your name
+author: Alireza Bagheri, PhD # add your name
 author-img: Alireza.png # add your photo
-about-author: Recent PhD graduate (May 2019) in Electrical Engineering at New Jersey Institute of Technology (NJIT). Data Science enthusiast! # add description
+about-author: Data Scientist # add description
 social-twitter: bagheri365 # add your Twitter handle
 # social-facebook: # add your Facebook handle
 social-github: alireza365 # add your Github handle
