@@ -13289,7 +13289,7 @@ y = 30 - 10x_1 + 70x_2 + noise,
 <p>In order to find the best estimate of ${\boldsymbol{\beta }}$ in the sense that the sum of squared residuals is minimized, 
 we find the gradient of the MSE with respect to ${\boldsymbol{\beta }}$ as</p>
 \begin{equation*}
-\nabla _{\boldsymbol{\beta}} J\left( \boldsymbol{\beta } \right) = 
+\nabla _{\boldsymbol{\beta}} J\left( \boldsymbol{\beta } \right) = \frac{1}{n}\left( \nabla _{\boldsymbol{\beta}}  {\bf{y}}{\bf{y}}^T - 2\nabla _{\boldsymbol{\beta}} {\boldsymbol{\beta}}^T {\bf{X}}^T {\bf{y}} + \nabla _{\boldsymbol{\beta}} {\boldsymbol{\beta}}^T {\bf{X}}^T {\bf{X}} \boldsymbol{\beta} \right)
     = \frac{2}{n}\left( {\bf{X}}^T{\bf{X}}\boldsymbol{\beta} - {\bf{X}}^T{\bf{y}} \right).
 \end{equation*}<p>
 We now set this gradient to zero in order to obtain the optimum $\boldsymbol{\hat \beta}$:</p>
